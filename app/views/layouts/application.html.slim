@@ -11,17 +11,23 @@ head
   meta charset="utf-8"
 	meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
   title = "Hackspace Cardiff"
-  == stylesheet_link_tag "application"
-  meta name="description" content=(yield(:description) || t(:description, scope: [:layout]))
-	meta name="author" content=""
-  meta name="viewport" content="width=device-width,initial-scale=1"
+  == stylesheet_link_tag "boilerplate", "application"
+  == javascript_include_tag "modernizr-2.0.6.min", "application"
 body
   div#container
     header.layout
       == link_to "Hackspace Cardiff", "/", id: "logo"
-      nav#level_1
+      nav
+        ul
+          li== link_to "About Us", "/about-us"
+          li== link_to "What's on", "/whats-on"
+          li== link_to "Projects", "/projects"
+          li== link_to "Wiki", ""
+          li== link_to "Contact us", "/contact-us"
+      .clear
     section#main role="main"
       == yield
+      .clear
     footer.layout
   == javascript_include_tag "plugins", "script"
   javascript:

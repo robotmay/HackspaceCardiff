@@ -4,6 +4,6 @@ HackspaceCardiff.controllers :pages do
   end
   
   get :about, map: "/about-us" do
-    render 'pages/about-us'
+    render 'pages/about_us'
   end
 end

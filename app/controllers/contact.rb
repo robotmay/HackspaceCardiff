@@ -1,6 +1,7 @@
 HackspaceCardiff.controllers :contact do
   get :new, map: '/contact-us' do
-    render 'contact/index'
+    @message = Message.new
+    render 'contact/new'
   end
   
   post :create, map: '/contact-us' do

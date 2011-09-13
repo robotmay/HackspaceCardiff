@@ -1,4 +1,95 @@
-body #container {
-  width: 980px;
-  margin-left: auto;
-  margin-right: auto; }
+.clear {
+  clear: both; }
+
+body {
+  background: white;
+  font-family: "Helvetica Neue"; }
+  body a {
+    color: #302e2c;
+    text-decoration: none; }
+    body a:hover {
+      text-decoration: underline; }
+    body a:visited {
+      color: #302e2c; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    margin: 0; }
+  body h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 25px;
+    margin-bottom: 10px; }
+  body h2 {
+    font-size: 1.8em; }
+  body h3 {
+    font-size: 1.6em; }
+  body h4 {
+    font-size: 1.4em; }
+  body h5 {
+    font-size: 1.2em; }
+  body h6 {
+    font-size: 1em; }
+  body #container {
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px; }
+    body #container header.layout {
+      margin-bottom: 30px; }
+      body #container header.layout #logo {
+        float: left;
+        display: block;
+        width: 315px;
+        height: 82px;
+        background: url(/images/hackspace_cardiff_logo.png) no-repeat;
+        text-indent: -99999px; }
+      body #container header.layout nav {
+        margin-top: 24px;
+        float: right; }
+        body #container header.layout nav ul {
+          padding: 0;
+          list-style: none; }
+          body #container header.layout nav ul li {
+            float: left;
+            margin-right: 10px; }
+            body #container header.layout nav ul li a {
+              display: block;
+              padding-left: 6px;
+              padding-right: 6px;
+              padding-top: 3px;
+              padding-bottom: 3px;
+              font-family: "Helvetica Neue";
+              font-size: 1.2em;
+              text-transform: uppercase; }
+              body #container header.layout nav ul li a:hover {
+                background: #302e2c;
+                color: white;
+                text-decoration: none; }
+    body #container section#main .left_column {
+      width: 250px;
+      float: left; }
+      body #container section#main .left_column nav ul {
+        list-style: none;
+        background: #302e2c;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 10px;
+        padding-bottom: 10px; }
+        body #container section#main .left_column nav ul li a {
+          display: block;
+          background: #302e2c;
+          padding-left: 12px;
+          padding-right: 12px;
+          padding-top: 3px;
+          padding-bottom: 3px;
+          font-family: "Helvetica Neue";
+          font-size: 1.2em;
+          text-transform: uppercase;
+          color: white; }
+          body #container section#main .left_column nav ul li a.active, body #container section#main .left_column nav ul li a:hover {
+            background: white;
+            color: #302e2c;
+            text-decoration: none; }
+    body #container section#main .right_column {
+      width: 660px;
+      float: right; }

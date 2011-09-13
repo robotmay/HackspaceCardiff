@@ -1,10 +1,127 @@
+$black: rgb(48,46,44)
+$grey: rgb(216,212,208)
+$white: rgb(255,255,255)
+$red: rgb(196,2,2)
+
+.clear
+  clear: both
 body
+  background: $white
+  font:
+    family: "Helvetica Neue"
+  a
+    color: $black
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+    &:visited
+      color: $black
+  h1, h2, h3, h4, h5, h6
+    margin: 0
+  h1
+    font:
+      size: 3em
+    text:
+      transform: uppercase
+      decoration: none
+    line-height: 25px
+    margin:
+      bottom: 10px
+  h2
+    font:
+      size: 1.8em
+  h3
+    font:
+      size: 1.6em
+  h4
+    font:
+      size: 1.4em
+  h5
+    font:
+      size: 1.2em
+  h6
+    font:
+      size: 1em
+
   #container
     width: 980px
     margin:
       left: auto
       right: auto
+      top: 40px
 
     header.layout
+      margin:
+        bottom: 30px
+      #logo
+        float: left
+        display: block
+        width: 315px
+        height: 82px
+        background: url(/images/hackspace_cardiff_logo.png) no-repeat
+        text-indent: -99999px
+      nav
+        margin:
+          top: 24px
+        float: right
+        ul
+          padding: 0
+          list:
+            style: none
+          li
+            float: left
+            margin:
+              right: 10px
+            a
+              display: block
+              padding:
+                left: 6px
+                right: 6px
+                top: 3px
+                bottom: 3px
+              font:
+                family: "Helvetica Neue"
+                size: 1.2em
+              text-transform: uppercase
+              &:hover
+                background: $black
+                color: $white
+                text-decoration: none
+
     section#main
+      .left_column
+        width: 250px
+        float: left
+        nav
+          ul
+            list-style: none
+            background: $black
+            padding:
+              left: 0
+              right: 0
+              top: 10px
+              bottom: 10px
+            li
+              a
+                display: block
+                background: $black
+                padding:
+                  left: 12px
+                  right: 12px
+                  top: 3px
+                  bottom: 3px
+                font:
+                  family: "Helvetica Neue"
+                  size: 1.2em
+                text-transform: uppercase
+                color: $white
+                &.active, &:hover
+                  background: $white
+                  color: $black
+                  text-decoration: none
+
+      .right_column
+        width: 660px
+        float: right
+
     footer.layout
